@@ -3,4 +3,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://entityframeworkcore.net/sitemap.xml
+Sitemap: http://entityframeworkcore.com/sitemap.xml
