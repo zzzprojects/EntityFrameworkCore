@@ -1,0 +1,4 @@
+---
+permalink: querying-data-joining
+---
+

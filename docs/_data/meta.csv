@@ -1,0 +1,43 @@
+permalink,title,meta-description,meta-keywords,h1,h2,h3,nagivation,template,css
+index,Learn how to use Entity Framework Bulk Insert with Tutorials & Examples for Code First & Database First.,Learn how to use Entity Framework Bulk Insert with Tutorials & Examples for Code First & Database First.,,Learn how to use Entity Framework Bulk Insert with Tutorials & Examples for Code First & Database First.,,,,container-none,
+overview,Overview,,,Overview,,,no,container-doc,section-article
+nuget-download,Nuget Download,,,Nuget Download,,,no,container-doc,section-article
+approach-code-first,Code First,,,Code First,,,no,container-doc,section-article
+approach-database-first,Database First,,,Database First,,,,container-doc,section-article
+model-data-annotations,Data Annotations,,,Data Annotations,,,,container-doc,section-article
+model-fluent-api,Fluent API,,,Fluent API,,,,container-doc,section-article
+model-inheritance,Inheritance,,,Inheritance,,,,container-doc,section-article
+model-relationships,Relationships,,,Relationships,,,,container-doc,section-article
+model-explicit-values,Explicit Values,,,Explicit Values,,,,container-doc,section-article
+querying-data-basic-query,Basic Query,,,Basic Query,,,,container-doc,section-article
+querying-data-linq,LINQ,,,LINQ,,,,container-doc,section-article
+querying-data-linq-dynamic,LINQ Dynamic,,,LINQ Dynamic,,,,container-doc,section-article
+querying-data-include-theninclude,Include & ThenInclude,,,Include & ThenInclude,,,,container-doc,section-article
+querying-data-global-filter,Global Filter,,,Global Filter,,,,container-doc,section-article
+querying-data-asnotracking,AsNoTracking,,,AsNoTracking,,,,container-doc,section-article
+querying-data-evaluation-client-server,Evaluation (Client & Server),,,Evaluation (Client & Server),,,,container-doc,section-article
+querying-data-joining,Joining,,,Joining,,,,container-doc,section-article
+querying-data-loading-eager-lazy,Loading (Eager & Lazy),,,Loading (Eager & Lazy),,,,container-doc,section-article
+querying-data-projection,Projection,,,Projection,,,,container-doc,section-article
+querying-data-raw-sql-queries,Raw SQL Queries,,,Raw SQL Queries,,,,container-doc,section-article
+querying-data-stored-procedure,Stored Procedure,,,Stored Procedure,,,,container-doc,section-article
+saving-data-savechanges,SaveChanges,,,SaveChanges,,,,container-doc,section-article
+saving-data-savechangesasync,SaveChangesAsync,,,SaveChangesAsync,,,,container-doc,section-article
+saving-data-bulk-insert,Bulk Insert,,,Bulk Insert,,,,container-doc,section-article
+saving-data-cascade-delete,Cascade Delete,,,Cascade Delete,,,,container-doc,section-article
+saving-data-changetracker,ChangeTracker,,,ChangeTracker,,,,container-doc,section-article
+saving-data-concurrency,Concurrency,,,Concurrency,,,,container-doc,section-article
+saving-data-entity-disconnected,Entity Disconnected,,,Entity Disconnected,,,,container-doc,section-article
+saving-data-entity-graph,Entity Graph,,,Entity Graph,,,,container-doc,section-article
+saving-data-identity-insert,Identity Insert,,,Identity Insert,,,,container-doc,section-article
+saving-data-stored-procedure,Stored Procedure,,,Stored Procedure,,,,container-doc,section-article
+saving-data-transaction,Transaction,,,Transaction,,,,container-doc,section-article
+migrations,Migrations,,,Migrations,,,,container-doc,section-article
+providers-inmemory,InMemory,,,InMemory,,,,container-doc,section-article
+providers-sql-server,SQL Server,,,SQL Server,,,,container-doc,section-article
+providers-oracle,Oracle,,,Oracle,,,,container-doc,section-article
+providers-mysql,MySQL,,,MySQL,,,,container-doc,section-article
+providers-postgresql,PostgreSQL,,,PostgreSQL,,,,container-doc,section-article
+providers-sqlite,SQLite,,,SQLite,,,,container-doc,section-article
+providers-more,More...,,,More...,,,,container-doc,section-article
+tutorial-learn,Tutorial & Learn,,,Tutorial & Learn,,,,container-doc,section-article
