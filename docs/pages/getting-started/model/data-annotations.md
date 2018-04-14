@@ -241,21 +241,3 @@ public class Person
 
 {% endhighlight %} 
 
-#### Index
-
-You can use **Index** attribute to create an index on one or more columns.
-
-{% include template-example.html %} 
-{% highlight csharp %}
-
-public class Person
-{
-    public int PersonId { get; set; }
-    public string LastName { get; set; }
-    public string FirstName { get; set; }
-
-    [Index]
-    public int RegistrationNumber { get; set; }
-}
-
-{% endhighlight %} 
