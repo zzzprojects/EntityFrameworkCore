@@ -57,16 +57,16 @@ The optionsBuilder has UseSqlServer method; it expects a connection string as a 
 
 Now to create a database using migrations from your model, install the following packages;
 
- - `Microsoft.EntityFrameworkCore.Tools`
- - `Microsoft.EntityFrameworkCore.Design`
+  - `Microsoft.EntityFrameworkCore.Tools`
+  - `Microsoft.EntityFrameworkCore.Design`
 
 Once these packages are installed, run the following command in Package Manager Console.
 
- - Add-Migration Initial` 
+ - `Add-Migration Initial` 
 
 This command scaffold a migration to create the initial set of tables for your model. When it is executed successfully, then run the following command.
 
- - Update-Database` to apply the new migration to the database. This command creates the database before applying migrations.
+ - `Update-Database` to apply the new migration to the database. This command creates the database before applying migrations.
  
 Now you will see a database in Object Explorer with two tables.
 
