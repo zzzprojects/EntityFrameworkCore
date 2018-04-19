@@ -44,7 +44,6 @@ You can also use LINQ Operators after a raw query using `FromSql()` method.
 
 using (var context = new MyContext())
 {
-
     var customers = context.Customers
         .FromSql("Select * from dbo.Customers where FirstName = 'Andy'")
         .OrderByDescending(c => c.Invoices.Count)
@@ -53,3 +52,13 @@ using (var context = new MyContext())
 }
 
 {% endhighlight %}
+
+### Limitations
+
+In Entity Framework Core there are some limitaions, so make sure you know them when using raw SQL queries.
+
+ - The SQL query specified in `FromSql()` method must return data for all properties of the entity type.
+ - The column names in the result set must match the column names that properties are mapped to. 
+ - The SQL query cannot contain related data, you can compose on top of the query using the Include operator to return related data. 
+ - The supplied SQL will be treated as a subquery, make sure that the SQL passed should not contain any characters or options that are not valid on a subquery, like a trailing semicolon etc.
+ - SQL statements other than SELECT are recognized automatically as non-composable. As a consequence, the full results of stored procedures are always returned to the client and any LINQ operators applied after FromSql are evaluated in-memory.
