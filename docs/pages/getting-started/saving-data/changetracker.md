@@ -1,6 +1,7 @@
 ---
 permalink: saving-data-changetracker
 ---
+## Introduction
 
 `ChangeTracker` class provides access to change tracking information and operations for entity instances the context is tracking. In EF Core, the DbContext includes the ChangeTracker class, and it starts tracking of all the entities as soon as it is retrieved using DbContext.
 

@@ -1,6 +1,7 @@
 ---
 permalink: saving-data-stored-procedure
 ---
+## Introduction
 
 The Entity Framework allows you to use stored procedures to perform predefined logic on database tables. Raw SQL queries can be used to execute a stored procedure. 
 
