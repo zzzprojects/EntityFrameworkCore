@@ -80,7 +80,6 @@ This command scaffold a migration to create the initial set of tables for your m
 
 It will apply the new migration to the database. Now you can use SQL Server database to insert, delete and update data.
 
-
 {% include template-example.html %} 
 {% highlight csharp %}
 
@@ -95,6 +94,26 @@ using (var context = new MyContext())
 
     context.Customers.Add(customer);
     context.SaveChanges();
+}
+
+{% endhighlight %}
+
+## Memory-Optimized Tables
+
+Memory-Optimized Tables are a feature of SQL Server where the entire table resides in memory. 
+
+ - A second copy of the table data is maintained on disk, but only for durability purposes. 
+ - Data in memory-optimized tables is only read from disk during database recovery. 
+
+You can specify that the table which mapped to an entity is memory-optimized. 
+
+{% include template-example.html %} 
+{% highlight csharp %}
+
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Customer>()
+        .ForSqlServerIsMemoryOptimized();
 }
 
 {% endhighlight %}

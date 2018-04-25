@@ -91,3 +91,9 @@ using (var context = new MyContext(options))
 
 {% endhighlight %}
 
+#### Limitations
+
+InMemory is a general purpose database provider for testing and is not designed for a relational database.
+
+ - InMemory will allow you to save data that would violate referential integrity constraints in a relational database.
+ - If you use DefaultValueSql(string) for a property in your model, this is a relational database API and will not affect when running against InMemory.
