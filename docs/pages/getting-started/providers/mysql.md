@@ -15,7 +15,7 @@ You can also use `MySQL Connector/Net` which integrates support for Entity Frame
 
 To use MySQL database provider, the first step is to install [ MySql.Data.EntityFrameworkCore](https://www.nuget.org/packages/MySql.Data.EntityFrameworkCore/) NuGet package. Let's consider a simple model which contains three entities.
 
-Now to use Entity Framework Core with a MySQL database, in the context class, override the OnConfiguring method to set the MySQL data provider with UseMySQL. 
+Now to use Entity Framework Core with MySQL database, override the OnConfiguring method in the context class and set the MySQL data provider using `UseMySQL` method. 
 
 {% include template-example.html %} 
 {% highlight csharp %}
