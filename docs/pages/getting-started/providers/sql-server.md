@@ -6,7 +6,7 @@ permalink: providers-sql-server
 
 `Microsoft.EntityFrameworkCore.SqlServer` database provider allows Entity Framework Core to be used with Microsoft SQL Server (including SQL Azure). The provider is maintained as part of the [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore) Project.
 
-#### How to Use InMemory Provider
+#### How to Use SQL Server Provider
 
 To use SQL Server database provider, the first step is to install [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) NuGet package. Let's consider a simple model which contains three entities.
 
