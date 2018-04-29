@@ -6,7 +6,7 @@ In relational databases, a relationship exists between two tables through foreig
 
  - One-to-Many
  - One-to-One
- - Many-to-Many (not supported yet in EF Core)
+ - Many-to-Many 
 
 ### One-to-Many Relationship
 
@@ -190,6 +190,7 @@ Now, look at the database in SQL Server Object Explorer.
 <img src="{{ site.github.url }}/images/relationships2.png"> 
 
 Now if your model does not follow the default conventions, the Fluent API can be used to configure the correct relationship between entities.
+
 {% include template-example.html %} 
 {% highlight csharp %}
 
@@ -201,3 +202,160 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 
 {% endhighlight %}
+
+### Many-to-Many Relationship
+
+In a many-to-many relationship, each row of data in one table is linked to many rows in the second table and vice versa. For example, a book can appear in multiple categories and a category can contain many books. 
+
+In EF Core, many-to-many relationships are not yet supported without an entity class to represent the join table. 
+
+{% include template-example.html %} 
+{% highlight csharp %}
+
+public class Book
+{
+    public int BookId { get; set; }
+    public string Title { get; set; }
+    public List<Category> Categories { get; set; }
+}
+
+public class Category
+{
+    public int CategoryId { get; set; }
+    public string CategoryName { get; set; }
+    public List<Book> Books { get; set; }
+}
+
+{% endhighlight %}
+
+You can represent a many-to-many relationship by including another entity class for the join table and mapping two separate one-to-many relationships.
+
+{% include template-example.html %} 
+{% highlight csharp %}
+
+public class Book
+{
+    public int BookId { get; set; }
+    public string Title { get; set; }
+    public List<BookCategory> BookCategories { get; set; }
+}
+
+public class Category
+{
+    public int CategoryId { get; set; }
+    public string CategoryName { get; set; }
+    public List<BookCategory> BookCategories { get; set; }
+}
+
+public class BookCategory
+{
+    public int BookId { get; set; }
+    public Book Book { get; set; }
+    public int CategoryId { get; set; }
+    public Category Category { get; set; }
+}
+
+{% endhighlight %}
+
+The Book and BookCategory have one-to-many relationship and Category and BookCategory have also one-to-many relationship. Now we need to configure the relationship using Fluent API.
+
+{% include template-example.html %} 
+{% highlight csharp %}
+
+public class MyContext : DbContext
+{
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Category> Categories { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=BookStoreDB;");
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<BookCategory>()
+            .HasKey(bc => new { bc.BookId, bc.CategoryId });
+
+        modelBuilder.Entity<BookCategory>()
+            .HasOne(bc => bc.Book)
+            .WithMany(b => b.BookCategories)
+            .HasForeignKey(bc => bc.BookId);
+
+        modelBuilder.Entity<BookCategory>()
+            .HasOne(bc => bc.Category)
+            .WithMany(c => c.BookCategories)
+            .HasForeignKey(bc => bc.CategoryId);
+    }
+}
+
+{% endhighlight %}
+
+Now when you run the migration, you will see the following code in migration file which will create three tables in the database.
+
+{% include template-example.html %} 
+{% highlight csharp %}
+
+protected override void Up(MigrationBuilder migrationBuilder)
+{
+    migrationBuilder.CreateTable(
+        name: "Books",
+        columns: table => new
+        {
+            BookId = table.Column<int>(nullable: false)
+                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+            Title = table.Column<string>(nullable: true)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Books", x => x.BookId);
+        });
+
+    migrationBuilder.CreateTable(
+        name: "Categories",
+        columns: table => new
+        {
+            CategoryId = table.Column<int>(nullable: false)
+                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+            CategoryName = table.Column<string>(nullable: true)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Categories", x => x.CategoryId);
+        });
+
+    migrationBuilder.CreateTable(
+        name: "BookCategory",
+        columns: table => new
+        {
+            BookId = table.Column<int>(nullable: false),
+            CategoryId = table.Column<int>(nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_BookCategory", x => new { x.BookId, x.CategoryId });
+            table.ForeignKey(
+                name: "FK_BookCategory_Books_BookId",
+                column: x => x.BookId,
+                principalTable: "Books",
+                principalColumn: "BookId",
+                onDelete: ReferentialAction.Cascade);
+            table.ForeignKey(
+                name: "FK_BookCategory_Categories_CategoryId",
+                column: x => x.CategoryId,
+                principalTable: "Categories",
+                principalColumn: "CategoryId",
+                onDelete: ReferentialAction.Cascade);
+        });
+
+    migrationBuilder.CreateIndex(
+        name: "IX_BookCategory_CategoryId",
+        table: "BookCategory",
+        column: "CategoryId");
+}
+
+{% endhighlight %}
+
+Now, look at the database in SQL Server Object Explorer.
+
+<img src="{{ site.github.url }}/images/relationships3.png"> 
