@@ -4,7 +4,7 @@ permalink: approach-code-first
 
 If you have used Entity Framework in the past, you will probably have heard about the **Code First** approach. 
 
- - **Code First** workflow begins with classes that describe the conceptual model and then Entity Framework generate a database from that model automatically.  
+ - Code First workflow begins with classes that describe the conceptual model and then Entity Framework generate a database from that model automatically.  
  - Code first approach offers most control over the final appearance of the application code and the resulting database.
 
 To start using Entity Framework, you will need to follow the following steps;
