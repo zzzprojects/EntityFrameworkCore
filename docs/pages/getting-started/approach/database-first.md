@@ -7,7 +7,7 @@ In the previous article, we have seen the migrations to create a database from a
  - We have a simple database created in the previous article, and it contains two tables, `Order` and `OrderDetail`. 
  - To create a DbContext and classes from the existing database, we will run the `Scaffold-DbContext` command in Package Manager console. 
 
-Let's create a new empty project and add all the required packages for EF core which is explained in the [Code First](/code-first) approach. 
+Let's create a new empty project and add all the required packages for EF core which is explained in the [Code First](/approach-code-first) approach. 
 
 <img src="{{ site.github.url }}/images/database-first1.png">
 
