@@ -33,7 +33,7 @@ Entity Framework Core supports many database providers to access different datab
  - SQL Compact
  - In-memory
 
-More provider can be found here: <a href="https://docs.microsoft.com/en-us/ef/core/providers/" target="_blank">"https://docs.microsoft.com/en-us/ef/core/providers/"</a>
+More provider can be found here: <a href="https://docs.microsoft.com/en-us/ef/core/providers/" target="_blank">https://docs.microsoft.com/en-us/ef/core/providers/</a>
 
 ## EF Core 2 New Features
 
