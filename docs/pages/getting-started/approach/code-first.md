@@ -7,7 +7,7 @@ If you have used Entity Framework in the past, you will probably have heard abou
  - Code First workflow begins with classes that describe the conceptual model and then Entity Framework generate a database from that model automatically.  
  - Code first approach offers most control over the final appearance of the application code and the resulting database.
 
-To start using Entity Framework, you will need to follow the following steps;
+To start using Entity Framework, use the following steps;
 
 The first step is to create a new project and then add all the required NuGet Packages for EF Core. Once all the NuGet packages are installed, add your conceptual model.
 
