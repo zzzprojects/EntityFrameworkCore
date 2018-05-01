@@ -4,7 +4,7 @@ permalink: overview
 
 ## Introduction
 
-Entity Framework Core is a lightweight, extensible and cross-platform version of Microsoft's object-relational mapper, Entity Framework is the official data access platform for Microsoft. 
+Entity Framework Core is a lightweight, extensible and cross-platform version of Microsoft's object-relational mapper (ORM), Entity Framework is the official data access platform for Microsoft. 
 
  - As .NET evolves towards a lighter weight cross-platform environment, Entity Framework is making the same transition. 
  - In other words, this was not simply an update from the latest Entity Framework (EF6), but it is a different kind of Entity Framework. 
@@ -17,7 +17,7 @@ Entity Framework Core is a lightweight, extensible and cross-platform version of
 
 ## Why Entity Framework Core
 
- - EF Core is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects.
+ - EF Core is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects.
  - It is a lightweight, extensible and can be used across various platforms
  - It eliminates the need for most of the data-access code that developers usually need to write. 
  - Entity Framework Core 2 brings more features that many developers needed in earlier versions of EF, as well as new innovations beyond Entity Framework Core 1.
@@ -33,7 +33,7 @@ Entity Framework Core supports many database providers to access different datab
  - SQL Compact
  - In-memory
 
-[Read more:](https://docs.microsoft.com/en-us/ef/core/providers/)
+More provider can be found here: https://docs.microsoft.com/en-us/ef/core/providers/
 
 ## EF Core 2 New Features
 
