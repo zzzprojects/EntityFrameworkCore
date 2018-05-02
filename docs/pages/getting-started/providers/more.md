@@ -4,6 +4,8 @@ permalink: providers-more
 
 A variety of sources builds EF Core providers and all of them are not maintained as part of the Entity Framework Core Project. Below are some more providers available for EF Core
 
+You can find the full provider list supported here: <a href="https://docs.microsoft.com/en-us/ef/core/providers/" target="_blank">https://docs.microsoft.com/en-us/ef/core/providers/</a>
+
 ### Pomelo.EntityFrameworkCore.MySql
 
 It allows Entity Framework Core to be used with MySQL. The provider is maintained as part of the [Pomelo Foundation Project](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql).
