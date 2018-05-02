@@ -86,6 +86,6 @@ TPH has one major problem, Columns for properties declared by subclasses will be
 
  - For example, Code First created a (DATETIME, NULL) column to map HireDate property in Teacher class and EnrollmentDate in Student class.
  - Teacher instance won't have an EnrollmentDate property; the EnrollmentDate field must be NULL for that row.
- - Similarly, student instance won't have a HiretDate property, so HiretDate field must be NULL for that row.
+ - Similarly, student instance won't have a HireDate property, so HireDate field must be NULL for that row.
 
 For more information see [Inheritance (Relational Database)](https://docs.microsoft.com/en-us/ef/core/modeling/relational/inheritance)
