@@ -12,6 +12,7 @@ Entity Framework Core is a lightweight, extensible and cross-platform version of
 
 ## History
 
+ - EF team has made some significant changes over Entity Framework 6 and called it EF7, but later they rename it to EF Core.
  - EF Core was first released in late June of 2016 after over 2 years of effort, this first version was followed by a great amount of change with EF Core 2, which was released a year later along with .NET Core and ASP.NET Core. 
  - EF Core 2 is seen by many as the first solid version, although EF Core 1 is still supported.
 
