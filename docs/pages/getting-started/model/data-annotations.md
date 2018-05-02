@@ -2,7 +2,7 @@
 permalink: model-data-annotations
 ---
 
-In .Net framework, data annotation add extra meaning to the data by adding attribute tags. It is used to configure the classes which will highlight the most commonly needed configurations.
+In .NET Framework, data annotation add extra meaning to the data by adding attribute tags. It is used to configure the classes which will highlight the most commonly needed configurations.
 
  - Data Annotations attributes are .NET attributes which can be applied to an entity class or properties to override default CodeFirst conventions in EF 6 and EF Core.
  - The advantage of using Data Annotation feature is that by applying Data Attributes, we can manage the data definition in a single place and do not need re-write the same rules in multiple places.
