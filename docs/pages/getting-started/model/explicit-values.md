@@ -65,6 +65,6 @@ Now everytime a new order is added to the database, the OrderDate property will 
 
 We have added two orders, one with default OrderDate value which will set by the database and the other order has explicit OrderDate value.
 
-<img src="{{ site.github.url }}/images/explicit-values.png"> 
+<img src="{{ site.github.url }}/images/explicit-values.PNG"> 
 
 If you open the database, you will see that the database generated value for the first order and our explicit value was used for the second.
