@@ -36,14 +36,17 @@ You can use the **ConcurrencyCheck** attribute to configure a property as a conc
 {% include template-example.html %} 
 {% highlight csharp %}
 
-public class Person
+public class Customer
 {
-    public int PersonId { get; set; }
+    public int CustomerId { get; set; }
 
     [ConcurrencyCheck]
     public string LastName { get; set; }
 
+    [ConcurrencyCheck]
     public string FirstName { get; set; }
+
+    public string Address { get; set; }
 }
 
 {% endhighlight %} 
@@ -223,7 +226,7 @@ public class Person
 
 #### Column
 
-It is also the same as Table attribute, but Table attribute overrides the table behavior while **Column** attribute overrides the column behavior.
+You can use **Column** attribute to map the property name which is different from the column name in the database. It is also the same as Table attribute, but Table attribute overrides the table behavior while **Column** attribute overrides the column behavior.
 
 {% include template-example.html %} 
 {% highlight csharp %}

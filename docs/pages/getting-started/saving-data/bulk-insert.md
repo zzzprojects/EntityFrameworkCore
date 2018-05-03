@@ -6,7 +6,7 @@ permalink: saving-data-bulk-insert
 
 When you want to insert hundreds, thousands, or millions of entities using `SaveChanges()` method, you will notice that your application performance is **INSANELY** slow. Because `SaveChanges()` requires one database round-trip for every entity to insert. So if you need to insert 10000 entities, then 10000 database round-trips will be performed and your application suffers from performances issues.
 
-Entity Framework Core doesn't provide any solution to overcome this performace issue, but you can use a 3rd party library [Entity Framework Extensions](http://entityframework-extensions.net/) to improve your application performance.
+Entity Framework Core has made great improvement and is way faster than EF6, but your application performance can even faster than that by using a 3rd party library [Entity Framework Extensions](http://entityframework-extensions.net/).
 
 ### BulkInsert
 
