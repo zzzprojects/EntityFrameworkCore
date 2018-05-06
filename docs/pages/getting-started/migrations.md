@@ -1,7 +1,3 @@
----
-permalink: migrations
----
-
 ## Introduction
 
 Migrations provide a way to incrementally apply schema changes to the database to keep it in sync with your EF Core model while preserving existing data in the database.
