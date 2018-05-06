@@ -39,18 +39,17 @@ You can use the **ConcurrencyCheck** attribute to configure a property as a conc
 public class Customer
 {
     public int CustomerId { get; set; }
-
-    [ConcurrencyCheck]
     public string LastName { get; set; }
+    public string FirstName { get; set; }
+    public string Address { get; set; }
 
     [ConcurrencyCheck]
-    public string FirstName { get; set; }
-
-    public string Address { get; set; }
+    public string Version { get; set; }
 }
 
 {% endhighlight %} 
 
+You can use any property, which you want to participate in the Concurrency Check.
 #### NotMapped
 
 You can use a **NotMapped** attribute to exclude a type from the model or any property of the entity.
