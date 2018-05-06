@@ -1,3 +1,7 @@
+---
+permalink: migrations
+---
+
 ## Introduction
 
 Migrations provide a way to incrementally apply schema changes to the database to keep it in sync with your EF Core model while preserving existing data in the database.
@@ -8,7 +12,9 @@ Migrations provide a way to incrementally apply schema changes to the database t
 
 Let's say we have a simple model containing three entities.
 
-```csharp
+{% include template-example.html %} 
+{% highlight csharp %}
+
 public class Customer
 {
     public int CustomerId { get; set; }
@@ -39,11 +45,14 @@ public class InvoiceItem
     [ForeignKey("InvoiceId")]
     public virtual Invoice Invoice { get; set; }
 }
-```
+
+{% endhighlight %}
 
 Here is the context class.
 
-```csharp
+{% include template-example.html %} 
+{% highlight csharp %}
+
 public class MyContext : DbContext
 {
     public DbSet<Customer> Customers { get; set; }
@@ -56,7 +65,8 @@ public class MyContext : DbContext
             .UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=CustomerDB;");
     }
 }
-```
+
+{% endhighlight %}
 
 #### Add Migration
 
@@ -82,7 +92,9 @@ You can see that database created with three tables.
 
 Now let's say you want to add a PhoneNumber property to the customer entity.
 
-```csharp
+{% include template-example.html %} 
+{% highlight csharp %}
+
 public class Customer
 {
     public int CustomerId { get; set; }
@@ -92,7 +104,8 @@ public class Customer
     public string PhoneNumber { get; set; }
     public virtual List<Invoice> Invoices { get; set; }
 }
-```
+
+{% endhighlight %}
 
 After making changes to your EF Core model, the database schema will be out of sync. To bring it up to date, we need to add another migration by using the `Add-Migration` command and call this migration **AddPhoneNumber**. 
 
@@ -100,7 +113,9 @@ After making changes to your EF Core model, the database schema will be out of s
 
 Your migration file will look like this.
 
-```csharp
+{% include template-example.html %} 
+{% highlight csharp %}
+
 public partial class AddPhoneNumber : Migration
 {
     protected override void Up(MigrationBuilder migrationBuilder)
@@ -118,7 +133,8 @@ public partial class AddPhoneNumber : Migration
             table: "Customers");
     }
 }
-```
+
+{% endhighlight %}
 
 Apply the migration to the database using the following command.
 
