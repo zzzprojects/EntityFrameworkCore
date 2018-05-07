@@ -1,3 +1,5 @@
+# Entity Framework Core - Overview
+
 ## Introduction
 
 Entity Framework Core is a lightweight, extensible and cross-platform version of Microsoft's object-relational mapper (ORM), Entity Framework is the official data access platform for Microsoft. 
