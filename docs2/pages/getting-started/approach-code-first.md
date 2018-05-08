@@ -65,4 +65,4 @@ This command scaffold a migration to create the initial set of tables for your m
  
 Now you will see a database in Object Explorer with two tables.
 
-<img src="https://imgur.com/b2dCfax">
+<img src="https://raw.githubusercontent.com/zzzprojects/EntityFrameworkCore/master/docs/images/code-first-db.png">
