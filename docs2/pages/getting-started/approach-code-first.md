@@ -65,4 +65,4 @@ This command scaffold a migration to create the initial set of tables for your m
  
 Now you will see a database in Object Explorer with two tables.
 
-<img src="{{ site.github.url }}/images/code-first-db.png">
+<img src="https://imgur.com/b2dCfax">

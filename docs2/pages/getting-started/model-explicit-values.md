@@ -60,6 +60,6 @@ using (var context = new MyContext())
 
 We have added two orders, one with default OrderDate value which will set by the database and the other order has explicit OrderDate value.
 
-<img src="{{ site.github.url }}/images/explicit-values.PNG"> 
+<img src="https://imgur.com/wOscgTj"> 
 
 If you open the database, you will see that the database generated value for the first order and our explicit value was used for the second.

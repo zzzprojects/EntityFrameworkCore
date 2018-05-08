@@ -53,4 +53,4 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
 Now configuration is added in the `DbContext.OnConfiguring` to throw an exception. If a poorly performing query is found, it will throw the following exception with a warning.
 
-<img src="{{ site.github.url }}/images/evaluation-client-server.png">
+<img src="https://imgur.com/NGW8iIU">

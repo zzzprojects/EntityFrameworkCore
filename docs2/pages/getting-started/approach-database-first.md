@@ -7,7 +7,7 @@ In the previous article, we have seen the migrations to create a database from a
 
 Let's create a new empty project and add all the required packages for EF core which is explained in the [Code First](/approach-code-first) approach. 
 
-<img src="{{ site.github.url }}/images/database-first1.png">
+<img src="https://imgur.com/JN59XMK">
 
 Now we need to run the `scaffold-dbcontext` command with just the required parameters.
 
@@ -17,7 +17,7 @@ The provider and connection parameters are required, the provider is Microsoft.E
 
 When you run this command, a bunch of new files is added in the Solution Explorer. 
 
-<img src="{{ site.github.url }}/images/database-first2.png">
+<img src="https://imgur.com/a566IN7">
 
 Now let's look at the new DbContext class. 
 

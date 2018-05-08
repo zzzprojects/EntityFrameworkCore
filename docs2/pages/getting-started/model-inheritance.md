@@ -74,7 +74,7 @@ Now to create a database using migrations from your model, run the following two
 
 As you can see in the DB schema, Code First has added all the properties in one table and also added a discriminator column to distinguish between persistent classes. 
 
-<img src="{{ site.github.url }}/images/inheritance.png">
+<img src="https://imgur.com/PPnu8Ch">
 
 TPH has one major problem, Columns for properties declared by subclasses will be nullable in the database.
 

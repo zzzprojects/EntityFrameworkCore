@@ -42,7 +42,7 @@ public class MyContext : DbContext
 
 The expression passed in HasQueryFilter method is automatically applied to any LINQ queries for Customer Type. We have four records in the Customers table in the database.
 
-<img src="{{ site.github.url }}/images/global-filters.png">
+<img src="https://imgur.com/47oEjuR">
 
 One record is soft deleted already, and the `IsDeleted` column contains a **True** value for that record. Now if we retrieve all the all the customers from the database using the LINQ query.
 
