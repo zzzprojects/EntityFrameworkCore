@@ -42,7 +42,7 @@ using (var context = new MyContext())
             .OnDelete(DeleteBehavior.Cascade);
     }
 }
-`
+```
 
 ## Delete Behaviors
 
