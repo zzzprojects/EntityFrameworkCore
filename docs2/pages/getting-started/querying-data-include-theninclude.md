@@ -1,4 +1,4 @@
-# Entity Framework Core - Include & ThenInclude
+# Include & ThenInclude
 
 ## Include 
 
