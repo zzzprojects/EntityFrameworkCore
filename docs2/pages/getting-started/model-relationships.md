@@ -1,4 +1,4 @@
-# Entity Framework Core - Relationships
+# Relationships
 
 In relational databases, a relationship exists between two tables through foreign keys. A Foreign Key is a column or combination of columns that are used to establish and enforce a link between the data in those two tables. Entity framework Core supports three types of relationships;
 
