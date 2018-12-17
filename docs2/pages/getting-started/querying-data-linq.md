@@ -1,2 +1,2 @@
-# Entity Framework Core - LINQ
+# LINQ
 
