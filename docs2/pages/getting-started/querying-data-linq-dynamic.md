@@ -1,1 +1,1 @@
-# Entity Framework Core - LINQ Dynamic
+# LINQ Dynamic
