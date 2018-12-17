@@ -1,4 +1,4 @@
-# Entity Framework Core - Explicit Values
+# Explicit Values
 
 ## Explicit Values for Generated Properties
 
