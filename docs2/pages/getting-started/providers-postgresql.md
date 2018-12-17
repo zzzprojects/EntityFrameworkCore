@@ -1,4 +1,4 @@
-# Entity Framework Core - PostgreSQL
+# PostgreSQL
 
 ## Introduction
 
