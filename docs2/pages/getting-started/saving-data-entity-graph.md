@@ -1,4 +1,4 @@
-# Entity Framework Core - Entity Graph
+# Entity Graph
 
 ## Introduction
 
