@@ -1,4 +1,4 @@
-# Entity Framework Core - Stored Procedure
+# Stored Procedure
 
 The Entity Framework allows you to use stored procedures to perform predefined logic on database tables. Raw SQL queries can be used to execute a stored procedure. 
 
