@@ -1,4 +1,4 @@
-# Entity Framework Core - Cascade Delete
+# Cascade Delete
 
 ## Introduction
 
