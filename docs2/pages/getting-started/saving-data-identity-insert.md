@@ -1,4 +1,4 @@
-# Entity Framework Core - Identity Insert
+# Identity Insert
 
 ## Introduction
 
