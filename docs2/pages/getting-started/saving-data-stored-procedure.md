@@ -1,4 +1,4 @@
-# Entity Framework Core - Stored Procedure
+# Stored Procedure
 
 ## Introduction
 
