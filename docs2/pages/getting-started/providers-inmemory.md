@@ -1,4 +1,4 @@
-# Entity Framework Core - InMemory
+# InMemory
 
 ## Introduction
 

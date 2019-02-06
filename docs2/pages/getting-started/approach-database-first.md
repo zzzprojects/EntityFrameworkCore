@@ -1,4 +1,4 @@
-# Entity Framework Core - Database First
+# Database First
 
 In the previous article, we have seen the migrations to create a database from a DbContext and classes. It is also possible to reverse engineer an existing database into a DbContext and classes, and it is known as **Database First** approach. 
 

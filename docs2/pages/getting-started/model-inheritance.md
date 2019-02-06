@@ -1,4 +1,4 @@
-# Entity Framework Core - Inheritance
+# Inheritance
 
 ## What is Inheritance Type in Entity Framework?  
 

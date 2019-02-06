@@ -1,4 +1,4 @@
-# Entity Framework Core - Projection
+# Projection
 
 ## Introduction
 

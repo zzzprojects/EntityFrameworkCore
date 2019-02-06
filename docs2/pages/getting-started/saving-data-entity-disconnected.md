@@ -1,4 +1,4 @@
-# Entity Framework Core - Entity Disconnected
+# Entity Disconnected
 
 ## Introduction
 

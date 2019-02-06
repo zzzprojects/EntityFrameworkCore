@@ -1,4 +1,4 @@
-# Entity Framework Core - Joining
+# Joining
 
 ## Introduction
 

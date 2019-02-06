@@ -1,4 +1,4 @@
-# Entity Framework Core - Transaction
+# Transaction
 
 ## Introduction
 

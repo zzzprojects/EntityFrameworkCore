@@ -1,4 +1,4 @@
-# Entity Framework Core - Global Filter
+# Global Filter
 
 ## Introduction
 

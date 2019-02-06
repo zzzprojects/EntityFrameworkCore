@@ -1,4 +1,4 @@
-# Entity Framework Core - Raw SQL Queries
+# Raw SQL Queries
 
 ## Introduction
 

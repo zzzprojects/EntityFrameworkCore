@@ -1,4 +1,4 @@
-# Entity Framework Core - Nuget Download
+# Nuget Download
 
 ## Install EF Core
 
