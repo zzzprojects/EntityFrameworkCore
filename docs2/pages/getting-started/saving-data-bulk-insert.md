@@ -1,3 +1,8 @@
+---
+PermaID: 1000243
+Name: Bulk Insert
+---
+
 # Bulk Insert
 
 ## Introduction

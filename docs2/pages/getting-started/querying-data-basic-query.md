@@ -1,3 +1,8 @@
+---
+PermaID: 1000232
+Name: Basic Query
+---
+
 # Basic Query
 
 Entity Framework Core uses Language Integrate Query (LINQ) to query data from the database. 

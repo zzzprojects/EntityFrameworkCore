@@ -1,3 +1,8 @@
+---
+PermaID: 1000225
+Name: More...
+---
+
 # More Providers...
 
 A variety of sources builds EF Core providers and all of them are not maintained as part of the Entity Framework Core Project. Below are some more providers available for EF Core

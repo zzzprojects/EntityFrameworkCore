@@ -1,3 +1,8 @@
+---
+PermaID: 1000214
+Name: Code First
+---
+
 # Code First
 
 If you have used Entity Framework in the past, you will probably have heard about the **Code First** approach. 

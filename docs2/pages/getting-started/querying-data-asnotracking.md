@@ -1,3 +1,8 @@
+---
+PermaID: 1000231
+Name: AsNoTracking
+---
+
 # AsNoTracking
 
 ## Introduction

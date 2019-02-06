@@ -1,3 +1,8 @@
+---
+PermaID: 1000247
+Name: Entity Disconnected
+---
+
 # Entity Disconnected
 
 ## Introduction

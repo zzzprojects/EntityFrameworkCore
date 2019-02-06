@@ -1,3 +1,8 @@
+---
+PermaID: 1000239
+Name: Loading (Eager & Lazy)
+---
+
 # Loading (Eager & Lazy)
 
 Entity Framework Core allows you to use the navigation properties in your model to load related entities. There are three common patterns used to load related data.

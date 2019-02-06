@@ -1,3 +1,8 @@
+---
+PermaID: 1000218
+Name: Explicit Values
+---
+
 # Explicit Values
 
 ## Explicit Values for Generated Properties

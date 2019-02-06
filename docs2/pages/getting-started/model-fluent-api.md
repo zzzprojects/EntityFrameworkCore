@@ -1,3 +1,8 @@
+---
+PermaID: 1000219
+Name: Fluent API
+---
+
 # Fluent API
 
 Fluent API specify the model configuration that you can with data annotations as well as some additional functionality that can not be possible with data annotations. 

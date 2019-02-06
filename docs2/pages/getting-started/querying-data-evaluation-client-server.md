@@ -1,3 +1,8 @@
+---
+PermaID: 1000233
+Name: Evaluation (Client & Server)
+---
+
 # Evaluation (Client & Server)
 
 Client vs. Server evaluation is a feature that makes it easier to write queries to the database because Entity Framework Core supports parts of the query being evaluated on the client and parts of it being pushed to the database. 

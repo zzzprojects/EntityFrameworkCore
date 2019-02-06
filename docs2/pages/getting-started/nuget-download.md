@@ -1,3 +1,8 @@
+---
+PermaID: 1000222
+Name: NuGet Download
+---
+
 # Nuget Download
 
 ## Install EF Core

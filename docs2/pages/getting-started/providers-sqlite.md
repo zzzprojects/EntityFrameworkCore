@@ -1,3 +1,8 @@
+---
+PermaID: 1000230
+Name: SQLite
+---
+
 # SQLite
 
 `Microsoft.EntityFrameworkCore.Sqlite` database provider allows Entity Framework Core to be used with to be used with SQLite. The provider is maintained as part of the [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore) Project.

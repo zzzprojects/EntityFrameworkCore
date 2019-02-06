@@ -1,3 +1,8 @@
+---
+PermaID: 1000220
+Name: Inheritance
+---
+
 # Inheritance
 
 ## What is Inheritance Type in Entity Framework?  

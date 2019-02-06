@@ -1,3 +1,8 @@
+---
+PermaID: 1000217
+Name: Data Annotations
+---
+
 # Data Annotations
 
 In .NET Framework, data annotation add extra meaning to the data by adding attribute tags. It is used to configure the classes which will highlight the most commonly needed configurations.
